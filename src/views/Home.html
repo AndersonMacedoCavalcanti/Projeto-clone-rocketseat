@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../styles/header-home.css">
+    <link rel="stylesheet" href="../styles/main-Home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&family=Roboto&display=swap" rel="stylesheet">
+    <title>Rocketseat</title>
+    <script>
+        function revelarProgram(name) {
+            let revelar = document.querySelector(name)
+
+            if (name !==  "#ignite" && name !== "#discovery") {
+                revelar.style.display = "flex"
+                document.querySelector('#ignite').style.display = "none"
+                document.querySelector('#discovery').style.display = "none"
+
+            }if (name !== '#club' && name !== '#ignite') {
+                revelar.style.display = "flex"
+                document.querySelector('#club').style.display = "none"
+                document.querySelector('#ignite').style.display = "none"
+
+            } else if (name !== '#club' && name !=='#discovery') {
+                revelar.style.display = "flex"
+                document.querySelector('#club').style.display = "none"
+                document.querySelector('#discovery').style.display = "none"
+            }
+        }
+
+
+
+    </script>
+</head>
+<body>
+<header>
+     <nav>
+        <img id="logo" src="../resources/img/Header/logo.png" alt="logo Rocketseat">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Planos</a></li>
+            <li><a href="#">Programas</a></li>
+            <li><a href="#">Conteudo</a></li>
+            <li><a href="#">A Rocketseat</a></li>
+        </ul>
+        <div>
+            <button>
+                <img src="../resources/img/Header/icon-user.png" alt="icon">
+                ENTRAR
+            </button>
+            <button>CONHECER PLANOS</button>
+        </div>
+    </nav>
+
+</header>
+<main>
+        <div class="hero-img">
+        <div class="container-inicial">
+            <div class="anima-hello">
+                <img src="../resources/img/maozinha.png" alt="">
+                <p>Hello World</p>
+            </div>
+                <h1>Acelere cada etapa da sua carreira em programação</h1>
+                <h2>O mapa completo para você impulsionar sua evolução e acessar as melhores oportunidades da sua carreira como dev.</h2>
+                <button>
+                    EMBARCAR NO FOQUETE
+                    <img src="../resources/img/SETA-DIREITA.png" alt="">
+                </button>
+        </div>
+            <video preload="metadata" autoplay loop muted
+                    src="https://storage.googleapis.com/golden-wind/site/hero-home-video.mp4">
+            </video>
+    </div>
+    <div class="conatiner-apresentacao">
+            <div class="separ">
+                <img src="../resources/img/risco-roxo.png" alt="">
+            </div>
+    </div>
+    <div class="quem-somos">
+        <h3>Somos uma plataforma completa de
+            aprendizado contínuo em programação</h3>
+        <p>Não importa se você está começando do zero ou se tem décadas de experiência como dev.<br>
+            Você vai encontrar o caminho para estar entre os melhores e se manter atualizado nesse universo dinâmico.</p>
+    </div>
+
+    <div>
+        <header class="header-programa">
+            <button type="button" onclick="revelarProgram('#ignite')">Para você se aperfeiçoar e acelerar</button>
+            <button type="button" onclick="revelarProgram('#club')">Para continuar avançando</button>
+            <button type="button" onclick="revelarProgram('#discovery')">Para você começa</button>
+        </header>
+
+        <div class="conteudo-program" id="ignite">
+            <div class="box-program">
+            <img  class="navi" src="../resources/img/kwvrBS8DSLiq6J0cJgDc.svg" alt="">
+            <div class="text-program">
+            <img class="log-conteudo-prog" src="../resources/img/ignit.png" alt="">
+                <h4>Acelere na carreira<br> através de uma<br> tecnologia específica</h4>
+                <p>O Ignite é um programa de aceleração profissional com treinamentos certificados e reconhecidos pelo mercado. Domine Elixir, Flutter, Node.js, React ou React Native e prepare-se para as melhores oportunidades.</p>
+                <div class="options-program">
+                    <button>SABER MAIS</button>
+                    <p><strong>Pré-requisito:</strong> ter uma base<br> sólida no desenvolvimento web.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="conteudo-program" id="club">
+            <div class="box-program">
+                <img  class="navi" src="../resources/img/Bko0umOnT6S3WpWeUyoC.svg" alt="">
+                <div class="text-program">
+                    <img class="log-conteudo-prog" src="../resources/img/club.png" alt="">
+                    <h4>A única forma de<br> acompanhar a tecnologia<br> é evoluindo com ela</h4>
+                    <p>O Experts Club é um clube de aprendizado contínuo com aulas práticas e específicas em que você vai aprender através das experiências acumuladas no mercado por grandes devs. Reunimos no clube as mais diversas tecnologias.</p>
+                    <div class="options-program">
+                        <button>SABER MAIS</button>
+                        <p>Aulas avançadas para devs que<br> nunca param de evoluir.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudo-program" id="discovery">
+            <div class="box-program">
+                <img  class="navi" src="../resources/img/fReZEM58TmOURZrT2yzb.svg" alt="">
+                <div class="text-program">
+                    <img class="log-conteudo-prog" src="../resources/img/discovery.png" alt="">
+                    <h4>Crie uma base sólida na<br> programação para decolar<br> rumo a desafios maiores</h4>
+                    <p>São mais de 500 aulas gratuitas para você aprender programação do zero, com foco em desenvolvimento web. Você vai encontrar aulas para dominar HTML, CSS, JavaScript, HTTP, Forms, Ferramentas, DOM e muito mais.</p>
+                    <div class="options-program">
+                        <button>CRIAR CADASTRO</button>
+                        <p>O Discover é 100% gratuito e<BR> você pode começar agora</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+</body>
+</html>
